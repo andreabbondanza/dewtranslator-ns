@@ -1,66 +1,57 @@
 {
-    "defaultSeverity": "warning",
-    "extends": [
-        "tslint:recommended"
-    ],
-    "linterOptions": {
-        "exclude": [
-            "./**/*.vue"
-        ]
-    },
-    "jsRules": {},
     "rules": {
+        "class-name": true,
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "no-duplicate-variable": true,
+        "no-eval": true,
+        "no-internal-module": true,
+        "no-trailing-whitespace": true,
+        "no-var-keyword": true,
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-whitespace"
+        ],
         "quotemark": [
             false,
-            "double",
-            "avoid-escape",
-            "avoid-template"
+            "double"
         ],
-        "trailing-comma": [
+        "semicolon": [
+            true,
+            "always"
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "typedef-whitespace": [
             true,
             {
-                "multiline": "false",
-                "singleline": "never"
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
             }
         ],
-        "no-unused-expression": [
+        "variable-name": [
             true,
-            "allow-fast-null-checks"
+            "ban-keywords"
         ],
-        "one-line": false,
-        "arrow-parens": false,
-        "no-console": false,
-        "object-literal-sort-keys": false,
-        "max-classes-per-file": false,
-        "curly": [
-            false,
-            "as-needed"
-        ],
-        "max-line-length": [
+        "whitespace": [
             true,
-            160
-        ],
-        "no-empty": [
-            true,
-            "allow-empty-catch",
-            "allow-empty-functions"
-        ],
-        "member-ordering": [
-            true,
-            {
-              "order": [
-                "public-constructor",
-                "private-constructor",
-                "private-static-field",
-                "private-instance-field",
-                "public-static-field",
-                "public-instance-field",
-                "private-instance-method",
-                "protected-instance-method",
-                "public-instance-method"
-              ]
-            }
-          ]
-    },
-    "rulesDirectory": []
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ]
+    }
 }
